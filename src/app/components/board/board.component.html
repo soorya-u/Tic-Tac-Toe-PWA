@@ -4,7 +4,7 @@
   <div>
     <app-square
       *ngFor="let square of squares; let i = index"
-      value="{{square}}"
+      value="{{ square }}"
       (click)="handleClick(i)"
     ></app-square>
   </div>

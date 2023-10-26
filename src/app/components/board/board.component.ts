@@ -3,16 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.scss']
+  styleUrls: ['./board.component.scss'],
 })
 export class BoardComponent {
-  
   squares = Array(9).fill(null);
   winner: string | null = null;
   xIsNext: boolean = true;
 
   getPlayer() {
-    return this.xIsNext ? 'X':'O';
+    return this.xIsNext ? 'X' : 'O';
   }
 
   handleClick(i: number) {
@@ -33,7 +32,7 @@ export class BoardComponent {
       [1, 4, 7],
       [2, 5, 8],
       [0, 4, 8],
-      [2, 4, 6]
+      [2, 4, 6],
     ];
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
@@ -47,5 +46,4 @@ export class BoardComponent {
     }
     return null;
   }
-
 }
