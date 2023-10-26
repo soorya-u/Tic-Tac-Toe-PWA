@@ -1,0 +1,11 @@
+<main>
+  <h1>Tic Tac Toe Game</h1>
+  <h2 *ngIf="winner">{{ winner }} has Won the Game!</h2>
+  <div>
+    <app-square
+      *ngFor="let square of squares; let i = index"
+      value="{{square}}"
+      (click)="handleClick(i)"
+    ></app-square>
+  </div>
+</main>

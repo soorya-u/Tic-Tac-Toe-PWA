@@ -1,0 +1,17 @@
+main {
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  div {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+  }
+}
