@@ -8,7 +8,15 @@ import { Component } from '@angular/core';
 export class BoardComponent {
   squares = Array(9).fill(null);
   winner: string | null = null;
+  draw: boolean = false;
   xIsNext: boolean = true;
+  
+  newGame() {
+    this.squares = Array(9).fill(null);
+    this.winner = null;
+    this.draw = false;
+    this.xIsNext = true;
+  }
 
   getPlayer() {
     return this.xIsNext ? 'X' : 'O';
@@ -42,6 +50,12 @@ export class BoardComponent {
         this.squares[a] === this.squares[c]
       ) {
         return this.squares[a];
+      }
+      
+      else if ((!this.winner && (this.squares.filter(value => value === null)).length===0)) {
+        this.draw = !this.draw;
+        return null;
+
       }
     }
     return null;

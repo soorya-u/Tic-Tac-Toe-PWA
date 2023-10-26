@@ -1,6 +1,9 @@
 <main>
   <h1>Tic Tac Toe Game</h1>
+  <button (click)="newGame()">Restart Game</button>
   <h2 *ngIf="winner">{{ winner }} has Won the Game!</h2>
+  <h2 *ngIf="draw">The Game is Draw!</h2>
+  <h4>Turn: {{getPlayer()}}</h4>
   <div>
     <app-square
       *ngFor="let square of squares; let i = index"
