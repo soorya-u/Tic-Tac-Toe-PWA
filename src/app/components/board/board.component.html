@@ -1,9 +1,33 @@
 <main>
   <h1>Tic <span>Tac</span> Toe</h1>
+
   <button (click)="newGame()">Restart Game</button>
-  <h2 *ngIf="winner">{{ winner }} has Won the Game!</h2>
+
+  <h2 *ngIf="winner">
+    <span
+      [style]="
+        winner === 'X'
+          ? 'color:rgb(219, 0, 0);text-shadow: 0 0 0.2rem rgb(255, 60, 60);'
+          : 'color: rgb(0, 136, 255);text-shadow: 0 0 0.2rem rgb(63, 192, 244);'
+      "
+      >{{ winner }}
+    </span>
+    has Won the Game!
+  </h2>
+
   <h2 *ngIf="draw">The Game is Draw!</h2>
-  <h4>Turn: {{ getPlayer() }}</h4>
+  <h4>
+    Turn:  
+    <span
+      [style]="
+        getPlayer() === 'X'
+          ? 'color:rgb(219, 0, 0);text-shadow: 0 0 0.2rem rgb(255, 60, 60);'
+          : 'color: rgb(0, 136, 255);text-shadow: 0 0 0.2rem rgb(63, 192, 244);'
+      "
+      >{{ getPlayer() }}
+    </span>
+  </h4>
+
   <div class="game-container">
     <span class="line line-1"></span>
     <span class="line line-2"></span>
@@ -16,7 +40,8 @@
     <div class="grid">
       <app-square
         *ngFor="let square of squares; let i = index"
-        buttonIndex="{{ i }}"
+        [data-i]="i"
+        [data-endGame]="endGame"
         value="{{ square }}"
         (click)="handleClick(i)"
       ></app-square>

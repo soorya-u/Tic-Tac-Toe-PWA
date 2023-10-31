@@ -10,12 +10,14 @@ export class BoardComponent {
   winner: string | null = null;
   draw: boolean = false;
   xIsNext: boolean = true;
+  endGame: boolean = false;
   
   newGame() {
     this.squares = Array(9).fill(null);
     this.winner = null;
     this.draw = false;
     this.xIsNext = true;
+    this.endGame = false;
   }
 
   getPlayer() {
@@ -49,10 +51,12 @@ export class BoardComponent {
         this.squares[a] === this.squares[b] &&
         this.squares[a] === this.squares[c]
       ) {
+        this.endGame = !this.endGame;
         return this.squares[a];
       }
       
       else if ((!this.winner && (this.squares.filter(value => value === null)).length===0)) {
+        this.endGame = !this.endGame;
         this.draw = !this.draw;
         return null;
 
