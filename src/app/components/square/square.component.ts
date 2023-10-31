@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./square.component.scss'],
 })
 export class SquareComponent {
-  @Input() value: string | null = null;
+  @Input() value: string = "";
   @Input("data-i") buttonIndex: number = NaN;
   @Input("data-endGame") endGame: boolean = false;
 
