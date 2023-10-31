@@ -11,7 +11,6 @@ export class SquareComponent {
   @Input("data-endGame") endGame: boolean = false;
 
   isDisabled() {
-    console.log(this.buttonIndex+"-"+this.value+"-"+this.endGame)
     if(this.value==="" && this.endGame) {
       return true;
     }
