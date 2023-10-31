@@ -3,9 +3,43 @@ main {
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.25rem;
 
   h1 {
     text-align: center;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Chakra Petch", sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    padding: 0.125rem 1rem;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(219, 0, 0),
+      rgb(0, 136, 255)
+    );
+
+    &:hover {
+      background-image: none;
+      border: 2px solid transparent;
+      box-shadow: -0.1rem -0.1rem 0.3rem rgb(0, 136, 255),
+        0.1rem 0.1rem 0.3rem rgb(219, 0, 0);
+      background: linear-gradient(rgb(219, 0, 0), rgb(0, 136, 255));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &:active {
+      transform: scale(1.05);
+    }
   }
 
   h2 {
@@ -13,7 +47,6 @@ main {
   }
 
   .game-container {
-
     width: 100vw;
 
     .line {
@@ -31,7 +64,6 @@ main {
       justify-content: center;
       align-items: center;
       gap: 2rem;
-
 
       app-square {
         width: 5rem;
