@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class BoardComponent {
   squares = Array(9).fill(null);
+  winSquares = Array(3).fill(null);
   winner: string | null = null;
   draw: boolean = false;
   xIsNext: boolean = true;
@@ -14,6 +15,7 @@ export class BoardComponent {
   
   newGame() {
     this.squares = Array(9).fill(null);
+    this.winSquares = Array(3).fill(null);
     this.winner = null;
     this.draw = false;
     this.xIsNext = true;
@@ -52,6 +54,7 @@ export class BoardComponent {
         this.squares[a] === this.squares[c]
       ) {
         this.endGame = !this.endGame;
+        this.winSquares = [a, b, c];
         return this.squares[a];
       }
       

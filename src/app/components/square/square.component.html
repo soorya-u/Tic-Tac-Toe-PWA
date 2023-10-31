@@ -1,10 +1,17 @@
 <button
   [style]="
     value === 'X'
-      ? 'color:rgb(219, 0, 0);text-shadow: 0 0 0.5rem rgb(255, 60, 60), 0 0 0.5rem rgb(255, 60, 60);'
-      : 'color: rgb(0, 136, 255);text-shadow: 0 0 0.5rem rgb(63, 192, 244), 0 0 0.5rem rgb(63, 192, 244);'
+      ? {
+          color: 'rgb(219, 0, 0)',
+          'text-shadow':
+            '0 0 0.5rem rgb(255, 60, 60), 0 0 0.5rem rgb(255, 60, 60)'
+        }
+      : {
+          color: 'rgb(0, 136, 255)',
+          'text-shadow':
+            '0 0 0.5rem rgb(63, 192, 244), 0 0 0.5rem rgb(63, 192, 244)'
+        }
   "
-  ngClass="button-{{ buttonIndex }}"
   [disabled]="isDisabled()"
 >
   {{ value }}

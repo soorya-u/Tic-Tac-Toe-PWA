@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class SquareComponent {
   @Input() value: string = "";
-  @Input("data-i") buttonIndex: number = NaN;
   @Input("data-endGame") endGame: boolean = false;
+  @Input("data-win") winner: string | null | boolean= false;
 
   isDisabled() {
     if(this.value==="" && this.endGame) {

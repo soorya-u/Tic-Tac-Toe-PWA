@@ -1,5 +1,5 @@
 <main>
-  <h1>Tic <span>Tac</span> Toe</h1>
+  <h1><a target="_blank" href="https://github.com/soorya-u/Tic-Tac-Toe-PWA">Tic-Tac-Toe</a></h1>
 
   <button (click)="newGame()">Restart Game</button>
 
@@ -7,40 +7,32 @@
     <span
       [style]="
         winner === 'X'
-          ? 'color:rgb(219, 0, 0);text-shadow: 0 0 0.2rem rgb(255, 60, 60);'
-          : 'color: rgb(0, 136, 255);text-shadow: 0 0 0.2rem rgb(63, 192, 244);'
+          ? {
+              color: 'rgb(219, 0, 0)',
+              'text-shadow': '0 0 0.2rem rgb(255, 60, 60)'
+            }
+          : {
+              color: 'rgb(0, 136, 255)',
+              'text-shadow': '0 0 0.2rem rgb(63, 192, 244)'
+            }
       "
       >{{ winner }}
     </span>
-    has Won the Game!
+    Won the Game!
   </h2>
 
   <h2 *ngIf="draw">The Game is Draw!</h2>
-  <h4>
-    Turn:  
-    <span
-      [style]="
-        getPlayer() === 'X'
-          ? 'color:rgb(219, 0, 0);text-shadow: 0 0 0.2rem rgb(255, 60, 60);'
-          : 'color: rgb(0, 136, 255);text-shadow: 0 0 0.2rem rgb(63, 192, 244);'
-      "
-      >{{ getPlayer() }}
-    </span>
-  </h4>
+
+  <div *ngIf="!endGame" class="player">
+    <span [ngClass]="xIsNext ? 'x-active' : ''" class="x-red">X</span>
+    <span [ngClass]="!xIsNext ? 'o-active' : ''" class="o-blue">O</span>
+  </div>
 
   <div class="game-container">
-    <span class="line line-1"></span>
-    <span class="line line-2"></span>
-    <span class="line line-3"></span>
-    <span class="line line-4"></span>
-    <span class="line line-5"></span>
-    <span class="line line-6"></span>
-    <span class="line line-7"></span>
-    <span class="line line-8"></span>
     <div class="grid">
       <app-square
         *ngFor="let square of squares; let i = index"
-        [data-i]="i"
+        [data-win]="(endGame && winSquares.includes(i)) ? winner : '' "
         [data-endGame]="endGame"
         value="{{ square }}"
         (click)="handleClick(i)"
