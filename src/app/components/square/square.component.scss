@@ -1,13 +1,11 @@
 button {
   height: 5rem;
   aspect-ratio: 1;
-  background-color: #908f8f;
   border: none;
-
   font-size: 3rem;
   font-family: "Chakra Petch",'Nunito', sans-serif;
   font-weight: 900;
-
+  background-color: #908f8f;
   box-shadow:
               inset 0 0 #fff,
               inset 0 0 #fff,
@@ -26,3 +24,22 @@ button:disabled {
               0 0 0.3rem #aeabab;
 }
 
+.winner-x {
+  background-color: #908f8f;
+  box-shadow:
+              inset 0 0 #fff,
+              inset 0 0 #fff,
+              0 0 0.5rem rgb(255, 60, 60),
+              0 0 0.5rem rgb(255, 60, 60),
+              0 0 0.5rem rgb(255, 60, 60);
+}
+
+.winner-o {
+  background-color: #908f8f;
+  box-shadow:
+              inset 0 0 #fff,
+              inset 0 0 #fff,
+              0 0 0.5rem rgb(63, 192, 244),
+              0 0 0.5rem rgb(63, 192, 244),
+              0 0 0.5rem rgb(63, 192, 244);
+}

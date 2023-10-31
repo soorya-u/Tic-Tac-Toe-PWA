@@ -16,4 +16,13 @@ export class SquareComponent {
     }
     return false;
   }
+
+  getWinner() {
+    if(this.winner==='X')
+      return 'winner-x';
+    else if(this.winner==='O')
+      return 'winner-o';
+    else
+      return '';
+  }
 }
