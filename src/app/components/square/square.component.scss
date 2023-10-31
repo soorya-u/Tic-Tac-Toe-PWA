@@ -1,4 +1,13 @@
 button {
   height: 5rem;
   aspect-ratio: 1/1;
+  background-color: #4c5600;
+  border: none;;
+  color: skyblue;
+  box-shadow:
+              inset 0 0 #fff,
+              inset 0 0 #fff,
+              0 0 0.3rem #d5f854,
+              0 0 0.3rem #d5f854,
+              0 0 0.3rem #d5f854,
 }

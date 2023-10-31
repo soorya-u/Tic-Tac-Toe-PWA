@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SquareComponent {
   @Input() value: string | null = null;
+  @Input() buttonIndex: string = "";
 }

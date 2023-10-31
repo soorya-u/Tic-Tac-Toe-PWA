@@ -2,6 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: nowrap;
 
   h1 {
     text-align: center;
@@ -11,11 +12,31 @@ main {
     text-align: center;
   }
 
-  div {
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10;
+  .game-container {
+
+    width: 100vw;
+
+    .line {
+      display: none;
+      // display: inline-block;
+      position: relative;
+      background-color: aqua;
+      width: 15rem;
+      height: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+
+      app-square {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
   }
 }
