@@ -1,3 +1,27 @@
+@keyframes hover-effect {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 75% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -7,36 +31,55 @@ main {
   font-size: 1.25rem;
 
   h1 {
-    text-align: center;
-  }
-
-  button {
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-family: "Chakra Petch", sans-serif;
-    font-style: italic;
-    font-size: 1.25rem;
-    border-radius: 0.5rem;
     padding: 0.125rem 1rem;
-    cursor: pointer;
-    border: 2px solid #fff;
-    background-image: linear-gradient(
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    background: linear-gradient(
       to bottom right,
       rgb(219, 0, 0),
       rgb(0, 136, 255)
     );
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: hover-effect 3s ease-in-out infinite;
+  }
 
-    &:hover {
-      background-image: none;
-      border: 2px solid transparent;
-      box-shadow: -0.1rem -0.1rem 0.3rem rgb(0, 136, 255),
-        0.1rem 0.1rem 0.3rem rgb(219, 0, 0);
-      background: linear-gradient(rgb(219, 0, 0), rgb(0, 136, 255));
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+  button {
+    padding: 0.125rem 1rem;
+    background: transparent;
+    color: #fff;
+    font-family: "Chakra Petch", sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border: none;
+    background-color: #333333;
+    border: 1px solid #333333;
+    border-radius: 10px;
+
+    &:before,
+    &:after {
+      content: "";
+      border: 2px solid #333333;
+      top: -4px;
+      left: -4px;
+      border-radius: 10px;
+      position: absolute;
+      background: linear-gradient(
+        to bottom right,
+        rgb(219, 0, 0),
+        rgb(0, 136, 255)
+      );
+      background-size: 200% 200%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      z-index: -1;
+      animation: hover-effect 2s linear infinite;
     }
-
+    
     &:active {
       transform: scale(1.05);
     }
