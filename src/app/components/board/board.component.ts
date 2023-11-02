@@ -27,6 +27,8 @@ export class BoardComponent {
   }
 
   handleClick(i: number) {
+    if(this.endGame)
+      return;
     if (!this.squares[i]) {
       this.squares.splice(i, 1, this.getPlayer());
       this.xIsNext = !this.xIsNext;
