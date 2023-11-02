@@ -21,3 +21,9 @@ footer {
     }
   }
 }
+
+@media (max-height: 632px) {
+  footer {
+    position: static;
+  }
+}
