@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1699013695927,
+  "index": "https://soorya-u.github.io/Tic-Tac-Toe-PWA/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/favicon.ico",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/index.html",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/main.d5e93a2ce9dc7170.js",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/manifest.webmanifest",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/polyfills.04773a5fa5d651e8.js",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/runtime.264b9a3a3030ea94.js",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/styles.0f48e501c43e4a5e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-128x128.png",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-144x144.png",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-152x152.png",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-192x192.png",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-384x384.png",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-512x512.png",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-72x72.png",
+        "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-128x128.png": "dcc17f3158940a489324466738d5e596ca4719e3",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-144x144.png": "c400d9411c629da2fb8e76232ed0a1596ee116ff",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-152x152.png": "5b9348ef17b402d7825d87da537674591dac6402",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-192x192.png": "9ddff427219e2e361145acb145eeb3c089b572ca",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-384x384.png": "607dde4843ab2ef82a47ec701aa2d7715ed12d7f",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-512x512.png": "806912fa240799efc1d326c0393859a31db9b830",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-72x72.png": "0113d630fb3e3ae8f9d335451e36fb3c3356b649",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/assets/icons/icon-96x96.png": "05052d287c889037e43372b57b502e62a4433b91",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/favicon.ico": "b884ba765dbae92ad3ad913b16b9a1b4e40575da",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/index.html": "64439e9ea68052c9194c1d26468049ccadfb100c",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/main.d5e93a2ce9dc7170.js": "ec460d1ad4e62cd3720789f47bdc1a7d1fa99a53",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/manifest.webmanifest": "4ea9e8ffd60089d8d0836336fa735bcddf8d329e",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/polyfills.04773a5fa5d651e8.js": "c0a659c3313a603668e6c98410f3223deafac5bd",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/runtime.264b9a3a3030ea94.js": "0644a574ac47b9dd230c88a0cdfec7a94648ad2f",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/styles.0f48e501c43e4a5e.css": "e99d8c028d69039b25cb6c4793c72ab6751f0d61"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
