@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1699013695927,
+  "timestamp": 1699519174220,
   "index": "https://soorya-u.github.io/Tic-Tac-Toe-PWA/index.html",
   "assetGroups": [
     {
@@ -54,7 +54,7 @@
     "https://soorya-u.github.io/Tic-Tac-Toe-PWA/favicon.ico": "b884ba765dbae92ad3ad913b16b9a1b4e40575da",
     "https://soorya-u.github.io/Tic-Tac-Toe-PWA/index.html": "64439e9ea68052c9194c1d26468049ccadfb100c",
     "https://soorya-u.github.io/Tic-Tac-Toe-PWA/main.d5e93a2ce9dc7170.js": "ec460d1ad4e62cd3720789f47bdc1a7d1fa99a53",
-    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/manifest.webmanifest": "4ea9e8ffd60089d8d0836336fa735bcddf8d329e",
+    "https://soorya-u.github.io/Tic-Tac-Toe-PWA/manifest.webmanifest": "d547db816ce550d86c7b41b4cd9b5c5fce7f8abc",
     "https://soorya-u.github.io/Tic-Tac-Toe-PWA/polyfills.04773a5fa5d651e8.js": "c0a659c3313a603668e6c98410f3223deafac5bd",
     "https://soorya-u.github.io/Tic-Tac-Toe-PWA/runtime.264b9a3a3030ea94.js": "0644a574ac47b9dd230c88a0cdfec7a94648ad2f",
     "https://soorya-u.github.io/Tic-Tac-Toe-PWA/styles.0f48e501c43e4a5e.css": "e99d8c028d69039b25cb6c4793c72ab6751f0d61"
