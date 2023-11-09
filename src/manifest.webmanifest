@@ -1,8 +1,8 @@
 {
-  "name": "ticTacToe-pwa",
-  "short_name": "ticTacToe-pwa",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Tic Tac Toe",
+  "short_name": "Tic Tac Toe",
+  "theme_color": "#262626",
+  "background_color": "#fff",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
